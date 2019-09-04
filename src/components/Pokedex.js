@@ -5,7 +5,7 @@ function Pokedex(props) {
     return (
         <div className="pokedex">
             {props.pokemonList.map(el => (
-                <Pokemon name={el.name} img={el.img} key={el.id} />
+                <Pokemon saveFn={props.saveFn} name={el.name} img={el.img} key={el.id} id={el.id} />
             ))}
         </div>
     )
