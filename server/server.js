@@ -12,6 +12,8 @@ app.get('/api/wild-pokemon', grassCtrl.getWildPokemon)
 
 app.post('/api/pokemon', pokeCtrl.catch)
 
+app.put('/api/pokemon/:id', pokeCtrl.rename)
+
 
 
 

@@ -137,7 +137,7 @@ table {
 }
 
 
-/* rest ^^ */
+/* reset ^^ */
 
 .App {
     text-align: center;
@@ -158,4 +158,20 @@ table {
     width: 150px;
     height: 150px;
     padding: 10px;
+}
+
+.grass>img {
+    width: 120px;
+    height: auto;
+}
+
+.pokedex {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pokemon>h4 {
+    padding: 20px;
 }
