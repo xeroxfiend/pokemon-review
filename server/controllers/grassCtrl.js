@@ -12,7 +12,7 @@ module.exports = {
         pokemonArr.push(result.data);
         axios.get(`https://pokeapi.co/api/v2/pokemon/${rand3}`).then(result => {
           pokemonArr.push(result.data);
-          res.status(200).send(pokemonArr[0]);
+          res.status(200).send(pokemonArr);
         });
       });
     });

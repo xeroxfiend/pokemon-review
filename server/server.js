@@ -3,11 +3,14 @@ const express = require('express')
 const app = express()
 const {SERVER_PORT} = process.env
 const grassCtrl = require('./controllers/grassCtrl')
+const pokeCtrl = require('./controllers/pokemonCtrl')
 
 
 app.use(express.json())
 
 app.get('/api/wild-pokemon', grassCtrl.getWildPokemon)
+
+app.post('/api/pokemon', pokeCtrl.catch)
 
 
 

@@ -1,11 +1,12 @@
 import React from 'react'
 import Pokemon from './Pokemon'
 
-function Pokedex() {
+function Pokedex(props) {
     return (
         <div className="pokedex">
-            Pokedex
-            <Pokemon />
+            {props.pokemonList.map(el => (
+                <Pokemon key={el.id} />
+            ))}
         </div>
     )
 }
