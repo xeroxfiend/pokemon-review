@@ -16,7 +16,7 @@ class Finder extends Component {
     render() {
         return (
             <div className="finder">
-                {this.state.wildPokemonArr.map(el => <Grass catchFn={this.props.catchFn} pokemonData={el} key={el.name}/>)}
+                {this.state.wildPokemonArr.map(el => <Grass catchFn={this.props.catchFn}pokemonData={el} key={el.name}/>)}
             </div>
         )
     }

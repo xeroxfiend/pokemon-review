@@ -14,8 +14,9 @@ app.post('/api/pokemon', pokeCtrl.catch)
 
 app.put('/api/pokemon/:id', pokeCtrl.rename)
 
+app.delete('/api/pokemon/:id', pokeCtrl.release)
 
-
+app.get('/api/pokemon', pokeCtrl.getAllPokemon)
 
 app.listen(SERVER_PORT, () => {
     console.log(`Listening on port ${SERVER_PORT}`)

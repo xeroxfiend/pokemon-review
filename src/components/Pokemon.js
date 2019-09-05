@@ -35,6 +35,7 @@ class Pokemon extends Component {
           <h4 onDoubleClick={() => this.toggle()}>{this.props.name}</h4>
         )}
         <img src={this.props.img} alt={this.props.name} />
+        <button onClick={() => this.props.releaseFn(this.props.id)}>Release</button>
       </div>
     );
   }

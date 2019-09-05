@@ -2,10 +2,15 @@
     text-align: center;
     /* background: #191A1C; */
     /* height: 100vh; */
-    /* color: white; */
-    font-family: 'Courier New', Courier, monospace;
+    color: red;
     /* font-weight: bold; */
+    font-family: 'Sigmar One', cursive;
     /* font-size: 3rem; */
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(-35deg, rgb(247, 247, 161), rgb(206, 206, 61));
 }
 
 .finder {
@@ -13,13 +18,8 @@
     justify-content: center;
 }
 
-.finder img {
-    width: 150px;
-    height: 150px;
-    padding: 10px;
-}
-
 .grass>img {
+    /* the '>' finds any element on the right which is a direct child of the element on the left */
     width: 120px;
     height: auto;
 }
@@ -31,6 +31,43 @@
     flex-wrap: wrap;
 }
 
-.pokemon>h4 {
-    padding: 20px;
+.pokemon {
+    width: 25%;
+    height: 180px;
+}
+
+.pokemon input {
+    display: block;
+    width: 100%;
+}
+
+.pokemon input::placeholder {
+    text-transform: capitalize;
+}
+
+.pokemon h3 {
+    text-transform: capitalize;
+}
+
+button {
+    border: none;
+    border-radius: 15%;
+    background: rgb(138, 138, 245);
+    margin: 5px;
+}
+
+.pokemon button:hover {
+    background: rgb(104, 104, 201);
+    cursor: pointer;
+}
+
+.editor input {
+    border-radius: 7px;
+    border: 1px solid black;
+    padding: .2rem
+}
+
+.editor input:focus {
+    outline: none;
+    border-color: blue;
 }
